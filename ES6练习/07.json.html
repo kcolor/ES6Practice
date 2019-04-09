@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			JSON对象：
+			方法：
+			JSON.parse()
+			JSON.stringify()
+			标准写法：
+			1.只能用单引号
+			2.所有的名字都必须用引号包起来
+			JSON的简写:
+			名字(键名)和值(键名)一样的时候，保留一个就好
+		-->
+		<script type="text/javascript">
+//			let jsons = {"a":15,"b":6};
+//			let str = 'http://www.baidu.com/user?data='+ encodeURIComponent(JSON.stringify(jsons))
+//			//json标准写法：
+//			let obj = '{"name":"王艳","age":18}'
+//			alert(JSON.parse(obj))
+			//JOSN的简写
+//			let a = 1,
+//			let b = 2,
+//			let objs = {a,b}
+//			console.log(objs)
+			//JSON的方法简写
+			let obj = {
+				a:"wangyan",
+//				show:function(){
+//					alert(this.a)
+//				}
+				//等效上面的方法
+				show(){
+					alert(this.a)
+				}
+			}
+			obj.show();
+		</script>
+	</body>
+</html>
