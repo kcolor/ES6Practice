@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+		<script src="../browser.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--
+			面向对象应用-React-组件化模块化-一个组件就是一个组件-依赖JSX-JSX就是babel-brswerjs
+			react 的应用 =>大面积ES6的应用
+		-->
+		<script type="text/babel">
+			class Item extends React.Component{
+				constructor(...args){
+					super(...args);
+				}
+				render(){
+					return <h1>{this.props.str}</h1>
+				}				
+			}
+			class List extends React.Component{
+				constructor(...args){
+					super(...args);
+				}
+				render(){
+					let items = this.props.arr.map(strs => <Item str={strs} key={strs}></Item>)
+					return <div>
+						{items}
+					</div>
+				}
+			}
+			window.onload = function(){
+				let div1 = document.getElementById("app");
+				ReactDOM.render(
+				<List arr={['王艳','吴亦凡','zhoujiel','林俊杰']}></List>,
+					div1
+				)
+			}
+		</script>
+		<div id="app">
+			
+		</div>
+	</body>
+</html>
