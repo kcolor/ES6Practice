@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue练习</title>
+</head>
+<body>
+    
+    <div id="app">
+        <!-- 数据双向绑定 -->
+        <!-- 输入框 -->
+        输入：<input type="text" v-model='value'> {{value}}<br/>
+        <!-- 选择 -->
+        <select>
+            <option disabled >请选择</option>
+            <option v-for='city in citys' v-model='city.ids'>{{city.name}}</option>
+        </select>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+        let vm = new Vue({
+            el:'#app',
+            data:{
+                value:'你好世界',
+                citys:[{name:'成都',ids:'1'},{name:'宜宾',ids:'2'},{name:'简阳',ids:'3'}]
+            },
+        })
+    </script>
+</body>
+</html>
