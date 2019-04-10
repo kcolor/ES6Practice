@@ -11,21 +11,56 @@
     <div id="app">
         <!-- 数据双向绑定 -->
         <!-- 输入框 -->
-        输入：<input type="text" v-model='value'> {{value}}<br/>
+        <!--输入：<input type="text" v-model='value'> {{value}}<br/>-->
         <!-- 选择 -->
-        <select>
+        <!--<select>
             <option disabled >请选择</option>
             <option v-for='city in citys' v-model='city.ids'>{{city.name}}</option>
-        </select>
+        </select>-->
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+   <script src="Vue.js" type="text/javascript" charset="utf-8"></script>
     <script>
-        let vm = new Vue({
+    	//APP组件
+    	var App = {
+    		data(){
+    			return {
+    				msg:'我是父组件的内容',
+    				msgc:'我是传值'
+    			}
+    		},
+    		template:`<div>
+    		<p>这是一个父组件</p>
+    		<A :news='msgc'></A>
+    		</div>`
+    	}
+    	//A组件
+    	Vue.component('A',{
+    		template:'<B v-bind="$attrs"></B>'
+    	})
+    	//B组件
+    	Vue.component('B',{
+    		template:'<C v-bind="$attrs"></C>'
+    	})
+    	//C组件
+    	Vue.component('C',{
+    		template:'<h1>{{$attrs.news}}</h1>',
+    		created(){
+    			console.log(this.$attrs);
+    		}
+    	})
+    	//多层嵌套传值
+       new Vue({
             el:'#app',
-            data:{
-                value:'你好世界',
-                citys:[{name:'成都',ids:'1'},{name:'宜宾',ids:'2'},{name:'简阳',ids:'3'}]
+            data(){
+            	return {
+            		
+            	}
             },
+            template:'<App/>',
+            components:{
+            	App
+            }
+            
         })
     </script>
 </body>
