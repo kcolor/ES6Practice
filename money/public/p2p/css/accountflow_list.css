@@ -1,0 +1,114 @@
+header .navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+header .navbar .collapse {
+  display: block;
+}
+header .navbar-inverse .navbar-nav > li {
+  margin-right: 20px;
+}
+header .navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+header .navbar-inverse .navbar-nav > li > a:hover {
+  color: #09d;
+}
+header .navbar-inverse .navbar-nav > li:nth-child(2) > a {
+  color: #09d;
+  font-weight: bold;
+}
+header .navbar-right {
+  margin-right: 96px;
+}
+#mydiv .navbar {
+  border-radius: 0px;
+  font-size: 16px;
+}
+#mydiv .navbar-brand {
+  padding: 14px 15px;
+}
+#mydiv .navbar-nav > li > a {
+  line-height: 40px;
+}
+#mydiv .navbar-nav > li > a:hover {
+  color: #09d;
+}
+#list li {
+  list-style: none;
+}
+#list ul {
+  margin: 0px;
+  padding: 0px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin-bottom: 0px;
+}
+#list .list-group ul li {
+  padding-left: 40px;
+  line-height: 40px;
+}
+@media only screen and (max-width: 480px) {
+  #list .table thead th:last-child {
+    display: none;
+  }
+  #list .table tbody td:last-child {
+    display: none;
+  }
+}
+@media only screen and (max-width: 601px) {
+  #list .table thead th:nth-child(5) {
+    display: none;
+  }
+  #list .table tbody td:nth-child(5) {
+    display: none;
+  }
+}
+#showhide {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  #invest_project {
+    position: relative;
+    height: 800px;
+  }
+  #invest_project .invest_left {
+    width: 186px;
+    position: absolute;
+    top: 0px;
+    left: -174px;
+    transition: all 0.3s linear;
+  }
+  #invest_project .invest_left ul li {
+    padding-left: 6px;
+  }
+  #invest_project .invest_left.active {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s linear;
+  }
+  #invest_project .invest_right {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s linear;
+  }
+  #invest_project .invest_right .showhide {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 186px;
+  }
+  #invest_project .invest_right.active {
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    transition: all 0.3s linear;
+  }
+}
+.footer {
+  background-color: #f8f8f8;
+  margin: 20px 0px 20px 0px;
+  padding-top: 30px;
+}

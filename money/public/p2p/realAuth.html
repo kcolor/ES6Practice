@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实名认证</title>
+    <!-- 引入bootstrap样式-->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <!-- 引入自己的样式 -->
+    <link rel="stylesheet" href="dist/css/realAuth.min.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+              <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                		<span class="glyphicon glyphicon-phone-alt"></span>
+                		<i>028-86261949</i>
+            		</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;首页</a></li>
+                  <li><a href="personal.html"><span class="glyphicon glyphicon-user"></span>&nbsp;小强</a></li>
+                  <li><a href="recharge.html">赶快充值</a></li>
+                  <li>
+                  	<a href="" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-log-out"></span>&nbsp;注销</a>
+                	<!--模态框-->
+                	<div class="modal fade bs-example-modal-lg" tabindex="-1" id="mymodal" role="dialog" aria-labelledby="myLargeModalLabel" >
+                        <div class="modal-dialog modal-sm" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title text-info" >退出系统</h4>
+                                </div>
+                                <div class="modal-body" id="mycon">
+                                    <h4>确认退出吗?</h4>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" id="right">确定</button>
+                                    <button type="button" class="btn btn-primary" id="wrong">取消</button>
+                                </div>
+                            </div>
+                        </div>
+                	</div>
+                    
+                  </li>
+                  <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;帮助帮助</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 导航 -->
+    <div class="bignav">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img alt="Brand" src="images/logo.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="invest.html">我要投资</a></li>
+                        <li><a href="borrow.html">我要借款</a></li>
+                        <li  class="active"><a href="personal.html">个人中心</a></li>
+                        <li><a href="#">新手指引</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- 内容staring -->
+    <div class="container user" style="margin-top:5px">
+        <div class="row" id="mainMenu">
+            <!-- 左边 -->
+            <div class="col-md-3 col-sm-3 sideLeft">
+                <div class="panel panel-default">
+                	<!--投资项目-->
+                    <div class="panel-heading mytitle">
+                        <h3 class="panel-title "><a href="#">投资项目</a></h3>
+                    </div>
+                    <div class="panel-body list-group">
+                        <p ><a href="borrow_list.html">借款项目</a></p>
+                        <p><a href="borrowBidReturn_list.html">还款明细</a></p>
+                    </div>
+                    <!--借款项目-->
+                    <div class="panel-heading mytitle">
+                        <h3 class="panel-title"><a href="borrow_list.html">借款项目</a></h3>
+                    </div>
+                    <div class="panel-body list-group">
+                        <p><a href="borrow_list.html">借款项目</a></p>
+                        <p><a href="borrow_info.html">借款明细</a></p>
+                    </div>
+                    <!--我的项目-->
+                    <div class="panel-heading mytitle">
+                        <h3 class="panel-title"><a href="#">我的账户</a></h3>
+                    </div>
+                    <div class="panel-body list-group">
+                        <p><a href="personal.html">账户信息</a></p>
+                        <p class="active"><a href="realAuth.html">实名认证</a></p>
+                        <p><a href="#">银行卡管理</a></p>
+                        <p><a href="#">登录记录</a></p>
+                    </div>
+                     <!--资产详细-->
+                    <div class="panel-heading mytitle">
+                        <h3 class="panel-title"><a href="#">资产详情</a></h3>
+                    </div>
+                    <div class="panel-body list-group">
+                        <p><a href="accountflow_list.html">账户流水</a></p>
+                        <p><a href="recharge_list.html">充值明细</a></p>
+                        <p><a href="moneyWithdraw_apply.html">提现记录</a></p>
+                        <p><a href="borrowBidReturn_list.html">收款明细</a></p>
+                    </div>
+                    <!--个人信息-->
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><a href="#">个人资料</a></h3>
+                    </div>
+                    <div class="panel-body list-group">
+                        <p><a href="login_list.html">个人资料</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 右边 -->
+            <div class="col-md-9 col-sm-9 sideRight">
+            	<button class="btn btn-success glyphicon glyphicon-arrow-right" id="showhide"></button>
+                <div class="panel panel-default">
+                    <div class="panel-heading">实名认证</div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" style="width:600px; margin:0 auto;">
+                            <div class="form-group">
+                                <label class="text-danger">为保护您账户安全，实名认证成功之后不能修改信息，请认真填写！</label>
+                            </div>
+                            <!-- 用户名 -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">用户名</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static">小强</p>
+                                </div>
+                            </div>
+                            <!-- 姓名 -->
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">姓名</label>
+                                <div class="col-sm-10">
+                                <input type="text" class="form-control" style="width:260px">
+                                </div>
+                            </div>
+                            <!-- 性别 -->
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">性别</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" style="width:260px">
+                                            <option>男</option>
+                                            <option>女</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- 证件类型 -->
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">证件类型</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" style="width:260px">
+                                        <option>身份证</option>
+                                        <option>驾驶证</option>
+                                        <option>军官证</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- 证件号码 -->
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">证件号码</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" style="width:260px">
+                                </div>
+                            </div>
+                            <!-- 出生日期 -->
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">出生日期</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" style="width:260px">
+                                </div>
+                            </div>
+                            <!-- 证件地址 -->
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">证件地址</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" style="width:500px;max-width:500px">
+                                </div>
+                            </div>
+                            <!-- 身份证照片 -->
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">身份证照片</label>
+                                <div class="col-sm-10">
+                                    <p class="text-primary" style="margin-left:0px"> 请点击“选择图片”,选择证件的正反两面照片。</p>
+                                    <div class="itemImg pull-left" style="margin-right: 30px;">
+                                        <a href="">上传正面</a>
+                                    </div>
+                                    <div class="itemImg pull-left">
+                                        <a href="">上传反面</a>
+                                    </div>
+                                    <div class="pull-left" style="margin-left: 60px;margin-top:50px">
+                                        <!-- data-container="body" data-toggle="popover" data-placement="top"  -->
+                                        <!-- <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" aria-describedby="popover286584">
+        Popover on top
+      </button> -->
+                                        <a href="#" id="realexample"  data-container="body" data-toggle="popover" data-placement="top" data-content="正面：<img src='images/upload_source_2.jpg' class='img-responsive' > 反面：<img src='images/upload_source_2_1.jpg' class='img-responsive' > " data-html="true" data-trigger="hover">查看样板</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 按钮 -->
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-primary">提交认证</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+    <!-- 内容ending -->
+
+    <!-- 尾部 -->
+    <footer class="container-fluid">
+        <div class="container">
+                <div class="row">
+                   <div class="col-md-8 col-xs-12">
+                        <p>专业Java机构</p>
+                        <p> 版权所有： 2006-2016新浪新闻</p>
+                        <p>地  址： 新浪新闻</p>
+                        <p>电  话： 028-xxxxx49  / 400-xxxx-6840  邮箱： yxxx@ixxx.cn</p>
+                        <p>
+                            <a href="#">蜀ICP备14xxxx9号-1</a>
+                            <a href="#">蜀公网安备5xxxxxx541</a>
+                        </p>
+                   </div>
+                   <div class="col-md-2 col-xs-6">
+                       <p>官方微博：</p>
+                        <p><img src="images/tecent.png" alt="" class="img-responsive"></p>
+                        <p><img src="images/sina.png" alt="" class="img-responsive"></p>
+                   </div>  
+                   <div class="col-md-2 col-xs-6">
+                       <p>官方微信：</p>
+                       <p><img src="images/wx.jpg" alt="" class="img-responsive"></p>
+                   </div> 
+                </div>
+        </div>
+    </footer>
+</body>
+<!-- 引入jQuery文件 -->
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<!-- 引入bootstrapjs文件 -->
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- 引入自己的js文件 -->
+<script src="dist/js/index.min.js"></script>
+</html>

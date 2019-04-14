@@ -1,0 +1,92 @@
+header .navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+header .navbar-inverse .navbar-nav > li {
+  margin-right: 20px;
+}
+header .navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+header .navbar-right {
+  margin-right: 96px;
+}
+.btn {
+  margin-top: -7px;
+}
+#mydiv .navbar {
+  border-radius: 0px;
+  display: flex;
+}
+#mydiv .navbar-brand {
+  padding: 6px 15px;
+}
+#invest_project .invest_left .list-group > p:last-child > a {
+  color: #000;
+}
+#invest_project li {
+  list-style: none;
+}
+#invest_project ul {
+  margin: 0px;
+  padding: 0px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin-bottom: 0px;
+}
+#invest_project .list-group ul li {
+  padding-left: 40px;
+  line-height: 40px;
+}
+.footer {
+  display: flex;
+  background-color: #f8f8f8;
+  margin: 20px 0px 20px 0px;
+  padding-top: 30px;
+}
+#showhide {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  #invest_project {
+    position: relative;
+    height: 800px;
+  }
+  #invest_project .invest_left {
+    width: 186px;
+    position: absolute;
+    top: 0px;
+    left: -174px;
+    transition: all 0.3s linear;
+  }
+  #invest_project .invest_left ul li {
+    padding-left: 4px;
+  }
+  #invest_project .invest_left.active {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s linear;
+  }
+  #invest_project .invest_right {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s linear;
+  }
+  #invest_project .invest_right .showhide {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 186px;
+  }
+  #invest_project .invest_right.active {
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    transition: all 0.3s linear;
+  }
+  .footer {
+    margin: 700px 0 20px 0;
+  }
+}

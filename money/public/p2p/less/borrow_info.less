@@ -1,0 +1,276 @@
+@import url("header1.less"); 
+header{
+    .navbar-inverse{
+        .navbar-nav{
+            &>li:nth-child(4){
+                &>a{
+                    color:@09d;
+                    font-weight:bold;
+                }
+            }
+        }
+    }
+}
+//中间内容的样式开始
+.loan_person{
+    margin-left: 75px;
+    .panel-body{
+        margin-left: 10px;
+        p:nth-child(1){
+            margin-left: 10%;
+        }
+        p:nth-child(2){
+            margin-left: 45%;
+            margin-top: -8px;
+        }
+        p{
+            &>span{
+               color: #fff;
+                display: inline-block;
+                width: 30px;
+                height: 20px;
+                background-color: #5cb85c;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+    }
+    .zs_loan{
+        margin-top: -20px;
+        &>h2{
+            font-weight:bold;
+            color:@09d;
+            &>small{
+                display: inline-block;
+                background-color: #337ab7;
+                color:#fff;
+                width:30px;
+                height:20px;
+                line-height:20px;
+                text-align:center;
+                font-size:12px;
+            }
+        }
+        &>p{
+             font-size:16px;
+            &>span{
+                color:@09d;
+            }
+        }
+    }
+    .progress_loan{
+        &>p{
+            font-size:16px;
+            &>span{
+                 color:@09d;
+            }
+        }
+    }
+}
+.person_msg{
+    table{
+        tr{
+           td{
+            width: 210px;
+            height: 34px;
+            line-height: 34px;
+            font-size:18px;
+            span{
+                color:@09d;
+            }
+        } 
+        }
+        
+    }
+}
+.check_msg{
+    table{
+        tr{
+           td{
+            width: 246px;
+            height: 34px;
+            line-height: 34px;
+            font-size:18px;
+            span{
+                color:@09d;
+            }
+        } 
+        }
+        
+    }
+}
+
+.payments{
+    font-size:16px;
+    font-weight:bold;
+    tbody{
+        color:#777;
+    }
+    
+}
+.record_msg{
+    font-size:16px;
+    tbody{
+        tr{
+            td:nth-child(3){
+                color:@09d;
+            }
+        }
+    }
+}
+
+
+//中间的内容样式结束
+@media only screen and (max-width:1061px ){
+    .loan_person{
+        width:92%;
+    }
+} 
+@media only screen and (max-width:991px ){
+    .person_msg{
+        table{
+            tr{
+                td{
+                   font-size:16px;
+                }
+            }
+        }
+    }
+    .check_msg{
+         table{
+            tr{
+                td{
+                   font-size:16px;
+                }
+            }
+        }
+    }
+} 
+@media only screen and (max-width:948px ){
+    .loan_person{
+        width:90%;
+    }
+} 
+@media only screen and (max-width:881px ){
+    .loan_person{
+        .panel-body{
+            p:nth-child(3){
+                display:none;
+            }
+             p:nth-child(4){
+                display:none;
+            }
+             p:nth-child(5){
+                display:none;
+            }
+        }
+    }
+} 
+@media only screen and (max-width:801px ){
+    .loan_person{
+        .panel-body{
+            p{
+                font-size:10px;
+            }
+        }
+    }
+} 
+@media only screen and (max-width:762px ){
+    .loan_person{
+        width:88%;
+    }
+} 
+@media only screen and (max-width:711px ){
+    .person_msg{
+        table{
+            tr{
+                td{
+                   font-size:14px;
+                }
+            }
+        }
+    }
+    .check_msg{
+         table{
+            tr{
+                td{
+                   font-size:14px;
+                }
+            }
+        }
+    }
+} 
+@media only screen and (max-width:480px ){
+    .loan_person{
+        width: 83%;
+        div:nth-child(1){
+            display:none;
+        }
+    }
+    .person_msg{
+        table{
+            tr{
+                td:nth-child(1){
+                    display:none;
+                }
+            }
+        }
+    }
+    .check_msg{
+         table{
+            tr{
+                 td:nth-child(1){
+                    display:none;
+                }
+            }
+        }
+    }
+    .payments{
+        .panel-body{
+            thead{
+                th:nth-child(2){
+                    display:none;
+                }
+                 th:nth-child(3){
+                    display:none;
+                }
+            }
+             tbody{
+                td:nth-child(2){
+                    display:none;
+                }
+                 td:nth-child(3){
+                    display:none;
+                }
+            }
+        }
+    }
+    .record_msg{
+        .panel-body{
+            thead{
+                th:nth-child(4){
+                    display:none;
+                }
+            }
+            tbody{
+                td:nth-child(4){
+                    display:none;
+                }
+            }
+        }
+    }
+}
+@import url("footer1.less"); 
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,167 @@
+/* 头部样式 */
+header nav.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+header .navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+header .navbar-inverse .navbar-nav > li:hover a {
+  color: #00a7ff;
+  text-decoration: underline;
+}
+header .navbar-inverse .navbar-brand {
+  color: #fff;
+  padding: 15px 0px;
+}
+header .navbar-inverse .navbar-brand i {
+  font-size: 24px;
+}
+/* 导航样式 */
+div.bignav .navbar {
+  margin-bottom: 0px;
+}
+div.bignav .navbar .navbar-nav > li > a {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 16px;
+  min-height: 80px;
+  line-height: 80px;
+}
+div.bignav .navbar .navbar-nav > li:hover a {
+  color: #00a7ff;
+  background-color: #e6e3e366;
+}
+div.bignav .navbar .navbar-header {
+  padding-top: 10px;
+}
+div.bignav .navbar .collapse {
+  display: block;
+}
+/* 个人中心系列 */
+.user .panel-heading .panel-title > a {
+  color: #337ab7;
+}
+.user .panel-body {
+  padding: 0px;
+}
+.user .panel-body p {
+  margin-left: 30px;
+}
+.user .list-group p {
+  margin-left: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+}
+.user .list-group p a {
+  margin-left: 30px;
+}
+.user .list-group p.active {
+  background-color: #337ab7;
+}
+.user .list-group p.active a {
+  color: #fff;
+}
+#showhide {
+  display: none;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+/*个人中心系列响应式菜单*/
+@media screen and (max-width: 768px) {
+  #mainMenu {
+    position: relative;
+    height: 1000px;
+    left: 0px;
+  }
+  #mainMenu .sideLeft {
+    position: absolute;
+    top: 0;
+    left: -116px;
+    transition: all 0.35s linear;
+  }
+  #mainMenu .sideLeft.active {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    transition: all 0.35s linear;
+  }
+  #mainMenu .sideRight.active {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    transition: all 0.35s linear;
+  }
+  #mainMenu .sideRight {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    transition: all 0.35s linear;
+  }
+  #mainMenu .sideRight #showhide {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px ;
+  }
+}
+/* 当前页面样式 */
+.bs-callout {
+  padding: 20px;
+  margin: 5px 0;
+  border: 1px solid #eee;
+  border-left-width: 2px;
+  border-radius: 3px;
+  background-color: #F4F8FA;
+}
+.bs-callout h2 {
+  color: #2e8ece;
+}
+.bs-callout-info {
+  border-left-color: #0099DD;
+}
+.right .page-header {
+  padding-bottom: 0px;
+}
+.right .absolu {
+  width: 300px;
+  padding: 30px 30px;
+  border: 1px solid #DDD;
+  box-shadow: 1px 1px 20px #ddd;
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  right: -70px;
+}
+/* @media (max-width: 1040px){
+    .right{
+        .absolu{
+            right: -30px;
+        }
+    }  
+}
+@media (max-width: 980px){
+    .right{
+        .absolu{
+            right:0px;
+        }
+    }  
+}
+@media (max-width: 680px){
+    .right{
+        .absolu{
+            right:50px;
+        }
+    }  
+} */
+/* 底部 */
+footer {
+  padding-top: 20px;
+  margin-top: 40px;
+  background-color: #F8F8F8;
+}

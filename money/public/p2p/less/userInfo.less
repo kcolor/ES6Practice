@@ -1,0 +1,89 @@
+@import url("header1.less"); 
+
+
+//中间内容的样式开始
+#invest_project{
+    .invest_left{
+        .list-group{
+            &>p:last-child{
+                &>a{
+                    color:#000;
+                }
+            }
+        }
+    }
+   li{
+       list-style:none;
+   }
+   ul{
+       margin:0px;
+       padding:0px;
+       border-left:1px solid #ccc;
+       border-right:1px solid #ccc;
+       margin-bottom:0px;
+   }
+   .list-group{
+       ul{
+           li{
+               padding-left:40px;
+               line-height:40px;
+           }
+       }
+   }
+}
+//中间的内容央视结束
+@media only screen and (max-width:1016px ){
+    .content{
+        width:98%;
+    }
+}
+#showhide{
+    display: none;
+}
+@media only screen and(max-width:768px){
+    #invest_project{
+        overflow-x: hidden;
+    }
+    #invest_project{
+        position:relative;
+        height:800px;
+        .invest_left{
+            width:186px;
+            position:absolute;
+            top:0px;
+            left: -174px;
+            transition:all 0.3s linear;
+            ul{
+                li{
+                    padding-left:4px;
+                }
+            }
+        }
+        .invest_left.active{
+            position:absolute;
+            top:0px;
+            left:0px;
+            transition:all 0.3s linear;
+        }
+        .invest_right{
+            position:absolute;
+            top:0px;
+            left: 0px;
+            transition:all 0.3s linear;
+            width: 100%;
+            .showhide{
+                display: block;
+                position:absolute;
+                left: 15px;
+                top: 186px;
+            }
+        }
+        .invest_right.active{
+            position:absolute;
+            top:0px;
+            left:160px;
+            transition:all 0.3s linear;
+        }
+    }
+}
+@import url("footer1.less"); 

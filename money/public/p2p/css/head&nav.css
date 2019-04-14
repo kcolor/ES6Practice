@@ -1,0 +1,41 @@
+/* 头部样式 */
+header nav.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+header .navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+header .navbar-inverse .navbar-nav > li:hover a {
+  color: #00a7ff;
+  text-decoration: underline;
+}
+header .navbar-inverse .navbar-brand {
+  color: #fff;
+  padding: 15px 0px;
+}
+header .navbar-inverse .navbar-brand i {
+  font-size: 24px;
+}
+/* 导航样式 */
+div.bignav .navbar {
+  margin-bottom: 0px;
+}
+div.bignav .navbar .navbar-nav > li > a {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 16px;
+  min-height: 80px;
+  line-height: 80px;
+}
+div.bignav .navbar .navbar-nav > li:hover a {
+  color: #00a7ff;
+  background-color: #e6e3e366;
+}
+div.bignav .navbar .navbar-header {
+  padding-top: 10px;
+}
+div.bignav .navbar .collapse {
+  display: block;
+}

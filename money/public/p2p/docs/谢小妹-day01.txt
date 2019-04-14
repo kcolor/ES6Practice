@@ -1,0 +1,6 @@
+2018-11-07
+今日计划：搭建好项目环境，并完成首页头部的编写。以及account_flow.html和recharge_list.html页面的编写
+完成情况：完成了今日计划,但有些细节需要完善和修饰
+
+2018-11-08：
+今日计划：完成 borrow_Info.html 、invest.html页面的编写

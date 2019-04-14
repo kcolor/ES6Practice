@@ -1,0 +1,48 @@
+
+@import url("head&nav.less");
+
+/* 当前页面样式 */
+
+.borrow{
+    .panel{
+        border-radius: 0px;
+        .panel-heading{
+           
+            border-radius: 0px;
+        }
+        .panel-body{
+            background-color: #F9F9F9;
+            ul{
+                li{
+                    color: #555;
+                    font-size: 14px;
+                    list-style: none;
+                    padding-left: 20px;
+                    margin-top: 5px;
+                    background: url("@{bgimgUrl}sequare.png") left center no-repeat;
+                }
+            }
+            .btn{
+                border-radius: 17px;
+                margin-left: 120px;
+            }
+            p:nth-child(1){
+                font-size: @fs16;
+            }
+        }
+    }
+    .panel-success,.panel-warning,.panel-info{
+        border: none;
+        h3{
+            font-size: 24px;
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+
+
+@import url("footer.less");

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>账户提现</title>
+    <!-- 引入bootstrap样式-->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <!-- 引入自己的样式 -->
+    <link rel="stylesheet" href="dist/css/moneyWithdraw_apply.min.css">
+    <script src="lib/datetimepicker/css/bootstrap-datetimepicker.min.css"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+              <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                		<span class="glyphicon glyphicon-phone-alt"></span>
+                		<i>028-86261949</i>
+            		</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+              		<li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;首页</a></li>
+              		<li><a href="personal.html"><span class="glyphicon glyphicon-user"></span>&nbsp;sirus</a></li>
+              		<li><a href="recharge.html">赶快充值</a></li>
+              		<li>
+              			<a href="" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-log-out"></span>&nbsp;注销</a>
+            			<!--模态框-->
+            			<div class="modal fade bs-example-modal-lg" tabindex="-1" id="mymodal" role="dialog" aria-labelledby="myLargeModalLabel" >
+	                    <div class="modal-dialog modal-sm" role="document">
+	                        <div class="modal-content">
+	                            <div class="modal-header">
+	                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                                <h4 class="modal-title text-info" >退出系统</h4>
+	                            </div>
+	                            <div class="modal-body" id="mycon">
+	                                <h4>确认退出吗?</h4>
+	                            </div>
+	                            <div class="modal-footer">
+	                                <button type="button" class="btn btn-default" data-dismiss="modal" id="right">确定</button>
+	                                <button type="button" class="btn btn-primary" id="wrong">取消</button>
+	                            </div>
+	                        </div>
+	                    </div>
+            		</div>
+              	</li>
+                  <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;帮助</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 导航 -->
+    <div class="bignav">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img alt="Brand" src="images/logo.png">
+                        </a>&emsp;
+                        <span class="delu">账户提现</span>
+                    </div>
+                    
+                </div>
+            </nav>
+    </div>
+
+    <!-- 内容staring -->
+    <!-- 账户提现 -->
+    <div class="container count">
+        <div class="bs-callout bs-callout-info" id="callout-navs-tabs-plugin">
+            <h2>账户提现</h2>
+            <p>1. 由于银行系统的限制，充值功能建议使用 IE 内核（IE8及以上）的浏览器。</p>
+            <p>2. 请注意：为打击信用卡套现行为，充值资金必须经过投资回款后方能允许提现。</p>
+            <p>3. 单笔提现范围-普通用户500.00 元 ~ 500000.00 元。</p>
+            <p>4. 单笔提现范围-VIP用户500.00 元 ~ 500000.00 元。</p>
+            <p>5. 目前提现服务费：1万元(含) 之内：2.00 元/笔；1万元（以上） ：5.00 元/笔。</p>
+            <p>6. 为避免信用卡套现，故充值15日内未投资提现按提现金额的0.4%收取提现费用。</p>
+            <p>7. 本次可提现 = 可用余额 - 净值保证金 - 不可提现金额 + 投标冻结 - 最高服务费 - 返还体验金</p>
+        </div>
+        <div class="row" style="margin-top:20px">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <p style="font-size:20px">总金额：<span style="color:#337ab7">10000元</span></p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <p style="font-size:20px">总金额：<span style="color:#337ab7">10000元</span></p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <p style="font-size:20px">总金额：<span style="color:#337ab7">10000元</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- 表单部分 -->
+    <div class="container">
+            <form id="form" class="form-horizontal el-form" action="moneyWithdraw_save.do" method="post">
+                    <div class="form-group">
+                        <label class="control-label col-lg-2">银行</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="bankType" style="width:300px">
+                                <option value="1">工商银行</option>
+                                <option value="2">农业银行</option>
+                                <option value="3">建设银行</option>
+                                <option value="4">招商银行</option>
+                                <option value="5">中国银行</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">开户行</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="bankName" style="width:300px">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">银行卡号</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="accountNumber" style="width:300px">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">户主姓名</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="realName" style="width:300px">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">提现金额</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="moneyAmount" style="width:300px">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">通知电话</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="mobilePhone" style="width:300px">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="col-sm-offset-2 btn btn-primary">确认提交</button>
+                    </div>
+                </form>
+    </div>
+    <!-- 内容ending -->
+
+    <!-- 尾部 -->
+    <footer class="container-fluid">
+        <div class="container">
+                <div class="row">
+                   <div class="col-md-8 col-xs-12">
+                        <p>专业Java机构</p>
+                        <p> 版权所有： 2006-2016新浪新闻</p>
+                        <p>地  址： 新浪新闻</p>
+                        <p>电  话： 028-xxxxx49  / 400-xxxx-6840  邮箱： yxxx@ixxx.cn</p>
+                        <p>
+                            <a href="#">蜀ICP备14xxxx9号-1</a>
+                            <a href="#">蜀公网安备5xxxxxx541</a>
+                        </p>
+                   </div>
+                   <div class="col-md-2 col-xs-6">
+                       <p>官方微博：</p>
+                        <p><img src="images/tecent.png" alt="" class="img-responsive"></p>
+                        <p><img src="images/sina.png" alt="" class="img-responsive"></p>
+                   </div>  
+                   <div class="col-md-2 col-xs-6">
+                       <p>官方微信：</p>
+                       <p><img src="images/wx.jpg" alt="" class="img-responsive"></p>
+                   </div> 
+                </div>
+        </div>
+    </footer>
+</body>
+<!-- 引入jQuery文件 -->
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<!-- 引入bootstrapjs文件 -->
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- 引入自己的js文件 -->
+<script src="dist/js/index.min.js"></script>
+
+</html>

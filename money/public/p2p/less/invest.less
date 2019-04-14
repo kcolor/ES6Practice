@@ -1,0 +1,56 @@
+@import url("header1.less"); 
+//投资列表
+.invest_list{
+    &>h3{
+        font-size:18px;
+        color:#000;
+    }
+    &>p{
+        &>span{
+            color:#777;
+            font-size:12px;
+        }
+    }
+    .table{
+        margin-bottom: 50px;
+        thead{
+            th{
+                color: #999999;
+                font-size:20px;
+            }
+           
+        }
+        tbody{
+             td{
+                font-size:16px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:690px ){
+    .table{
+        thead{
+            th:nth-child(3){
+                display:none;
+            }
+             th:nth-child(4){
+                display:none;
+            }
+             th:nth-child(6){
+                display:none;
+            }
+        }
+         tbody{
+            td:nth-child(3){
+                display:none;
+            }
+             td:nth-child(4){
+                display:none;
+            }
+             td:nth-child(6){
+                display:none;
+            }
+        }
+    }
+}
+@import url("footer1.less"); 

@@ -1,0 +1,115 @@
+ul li {
+  list-style: none;
+}
+.now {
+  background-color: pink;
+  color: #fff;
+}
+header .navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+header .navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+header .navbar-inverse .navbar-nav > li > a:hover {
+  color: #09d;
+}
+header .navbar-inverse .navbar-brand {
+  color: #fff;
+  padding: 12px 12px;
+}
+#mydiv .navbar {
+  border-radius: 0px;
+  font-size: 16px;
+}
+#mydiv .navbar-brand {
+  padding: 14px 15px;
+}
+#mydiv .navbar-nav > li > a {
+  line-height: 40px;
+}
+#mydiv .navbar-nav > li > a:hover {
+  color: #09d;
+}
+.collapse {
+  display: block;
+  visibility: visible;
+}
+.investment div {
+  padding: 0px 78px;
+  background-position: 0px 20px;
+  background-repeat: no-repeat;
+}
+.investment .f1 {
+  background-image: url("../../images/feature01.png");
+}
+.investment .f2 {
+  background-image: url("../../images/feature02.png");
+}
+.investment .f3 {
+  background-image: url("../../images/feature03.png");
+}
+.loan .panel {
+  border: 0px;
+}
+.loan .panel-heading {
+  padding: 20px 2px;
+  height: 50px;
+  line-height: 50px;
+}
+.loan .panel-heading .panel-title span:nth-child(1) {
+  font-size: 24px;
+  color: #2e8ece;
+  font-weight: bold;
+  border-bottom: 3px solid #2e8ece;
+}
+.loan .panel-heading .panel-title span:nth-child(2) {
+  font-size: 12px;
+  color: #337ab7;
+}
+.news .table td:hover {
+  color: #09d;
+}
+.news .panel {
+  border: 0px;
+}
+.news .panel-heading {
+  padding: 20px 4px;
+  height: 50px;
+  line-height: 50px;
+}
+.news .panel-heading .panel-title span:nth-child(1) {
+  font-size: 24px;
+  color: #2e8ece;
+  font-weight: bold;
+  border-bottom: 3px solid #2e8ece;
+}
+.news .panel-heading .panel-title span:nth-child(2) {
+  font-size: 12px;
+  color: #337ab7;
+}
+@media only screen and (max-width: 626px) {
+  .loan .table tr th:nth-child(3) {
+    display: none;
+  }
+  .loan .table tr th:nth-child(4) {
+    display: none;
+  }
+  .loan .table tr th:nth-child(5) {
+    display: none;
+  }
+  .loan .table tr td:nth-child(3) {
+    display: none;
+  }
+  .loan .table tr td:nth-child(4) {
+    display: none;
+  }
+  .loan .table tr td:nth-child(5) {
+    display: none;
+  }
+}
+.footer {
+  background-color: #f8f8f8;
+  padding: 46px 0;
+}

@@ -1,0 +1,83 @@
+.user{
+    .panel-heading{
+        .panel-title{
+            &>a{
+                color: #337ab7;
+            }
+        }
+    }
+    .panel-body{
+        padding: 0px;
+        p{  
+            margin-left: 30px;
+        }
+    }
+    .list-group{
+        
+        p{  
+            margin-left: 0px;
+            margin-bottom: 0px;
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+            a{
+                margin-left: 30px;
+            }
+            &.active{
+                background-color: #337ab7;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}
+#showhide{
+    display:none;  
+
+}
+html,body{
+    overflow-x: hidden;
+}
+/*个人中心系列响应式菜单*/
+@media screen and (max-width:768px ) {
+    #mainMenu{
+        position: relative;
+        height: 1000px;
+        left: 0px;
+        .sideLeft{
+            position: absolute;
+            top: 0;
+            left: -116px;
+            transition: all 0.35s linear;
+        }
+        .sideLeft.active{
+            position: absolute;
+            top: 0;
+            left: -15px;
+            transition: all 0.35s linear;
+        }
+        .sideRight.active{
+            position: absolute;
+            top: 0;
+            left: 100px;
+            transition: all 0.35s linear;
+        }
+        .sideRight{
+            position: absolute;
+            top: 0;
+            left: 1px;
+            transition: all 0.35s linear;
+            #showhide{
+                position: absolute;
+                display: block;
+                top: 0px;
+                left:0px ;
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,126 @@
+ul li {
+  list-style: none;
+}
+.now {
+  background-color: pink;
+  color: #fff;
+}
+header .navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+header .navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+header .navbar-inverse .navbar-nav > li > a:hover {
+  color: #09d;
+}
+header .navbar-inverse .navbar-brand {
+  color: #fff;
+  padding: 12px 12px;
+}
+#mydiv .navbar {
+  border-radius: 0px;
+  font-size: 16px;
+}
+#mydiv .navbar-brand {
+  padding: 14px 15px;
+}
+#mydiv .navbar-nav > li > a {
+  line-height: 40px;
+}
+#mydiv .navbar-nav > li > a:hover {
+  color: #09d;
+}
+.collapse {
+  display: block;
+  visibility: visible;
+}
+#mydiv .navbar {
+  border-radius: 0px;
+  display: flex;
+}
+#mydiv .navbar-brand {
+  padding: 6px 15px;
+}
+#invest_project .invest_left .list-group > p:last-child > a {
+  color: #000;
+}
+#invest_project li {
+  list-style: none;
+}
+#invest_project ul {
+  margin: 0px;
+  padding: 0px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin-bottom: 0px;
+}
+#invest_project .list-group ul li {
+  padding-left: 40px;
+  line-height: 40px;
+}
+#showhide {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  #invest_project {
+    position: relative;
+    height: 800px;
+  }
+  #invest_project .invest_left {
+    width: 186px;
+    position: absolute;
+    top: 0px;
+    left: -174px;
+    transition: all 0.3s linear;
+  }
+  #invest_project .invest_left ul li {
+    padding-left: 4px;
+  }
+  #invest_project .invest_left.active {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s linear;
+  }
+  #invest_project .invest_right {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s linear;
+  }
+  #invest_project .invest_right .showhide {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 186px;
+  }
+  #invest_project .invest_right.active {
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    transition: all 0.3s linear;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #invest_project .invest_right .showhide {
+    top: 222px;
+  }
+  .panel .table thead tr th:nth-child(2) {
+    display: none;
+  }
+  .panel .table thead tr th:nth-child(3) {
+    display: none;
+  }
+  .panel .table tbody tr td:nth-child(2) {
+    display: none;
+  }
+  .panel .table tbody tr td:nth-child(3) {
+    display: none;
+  }
+}
+.footer {
+  background-color: #f8f8f8;
+  padding: 46px 0;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="dist/css/recharge_list.min.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<nav class="navbar navbar-inverse">
+			  <div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="index.html">首页</a></li>
+			        <li><a href="userInfo.html">xiaoq</a></li>
+			        <li><a href="recharge.html">账户充值</a></li>
+			        <li>
+			        	<a href="" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-log-out"></span>&nbsp;注销</a>
+                    	<!--模态框-->
+                    	<div class="modal fade bs-example-modal-lg" tabindex="-1" id="mymodal" role="dialog" aria-labelledby="myLargeModalLabel" >
+                            <div class="modal-dialog modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title text-info" >退出系统</h4>
+                                    </div>
+                                    <div class="modal-body" id="mycon">
+                                        <h4>确认退出吗?</h4>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal" id="right">确定</button>
+                                        <button type="button" class="btn btn-primary" id="wrong">取消</button>
+                                    </div>
+                                </div>
+                            </div>
+                    	</div>
+                    
+			        </li>
+			        <li><a href="#">帮助</a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</header>
+		<!--头部导航条结束-->
+		<div id="mydiv">
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><img src="images/logo.png"/></a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="index.html">首页</a></li>
+		        <li><a href="invest.html">我要投资</a></li>
+		        <li><a href="borrow.html">我要借款</a></li>
+		        <li class="active"><a href="personal.html">个人中心 <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">新手指引</a></li>
+		        <li><a href="#">关于我们</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		</div>
+		
+		<div class="container"  id="invest_project">
+			<div class="row" id="list">
+				<!--导航列表-->
+				<div class="col-md-3 invest_left">
+					<div class="list-group">
+						<p href="javascript:" class="list-group-item active">投资项目</p>
+						<p href="#" class="list-group-item">借款项目</p>
+						<ul>
+							<li><a href="borrow_list.html">借款项目</a></li>
+							<li><a href="borrowBidReturn_list.html">还款明细</a></li>
+						</ul>
+						<p href="#" class="list-group-item">我的账户</p>
+						<ul>
+							<li><a href="userInfo.html">账户信息</a></li>
+							<li><a href="realAuth.html">实名认证</a></li>
+							<li><a href="#">银行卡管理</a></li>
+							<li><a href="#">登录记录</a></li>
+						</ul>
+						<p href="#" class="list-group-item">资产详情</p>
+						<ul>
+							<li><a href="accountflow_list.html">账户流水</a></li>
+							<li><a href="recharge_list.html">充值明细</a></li>
+							<li><a href="money_withdraw_list.html">提现记录</a></li>
+							<li><a href="borrow_info.html">借款明细</a></li>
+						</ul>
+						<p class="list-group-item"><a href="userInfo.html">个人资料</a></p>
+					</div>
+				</div>
+				<!--账户流水-->
+				<div class="col-md-9 invest_right" id="main" style="width: 600px; height: 600px;">
+				  
+				</div>
+		</div>
+		
+		
+		
+		<footer class="footer">
+			<div class="container">
+				<div class="col-md-8">
+					<p>专业Java培训、前端培训机构</p>
+					<p>版权所有： 2006-2016新浪新闻</p>
+					<p>地  址： 新浪新闻</p>
+					<p>电  话： 028-86261949  / 400-808-6840  邮箱：</p>
+					<p>yuandaima@itsource.cn</p>
+					<p><a href="">蜀ICP备1xxxxxx9号-1</a>  <a href="">蜀公网安备5xxxxx1</a></p>
+				</div>
+				<div class="col-md-2">
+					<p>官方微博：</p>
+					<p><img src="images/tecent.png"  class="img-responsive"/></p>
+					<p><img src="images/sina.png"  class="img-responsive"/></p>
+				</div>
+				<div class="col-md-2">
+					<p>官方微信：</p>
+					<p><img src="images/wx.jpg" class="img-responsive"/></p>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="scripts/personal1.js"></script>
+		<script src="dist/js/index.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#showhide").click(function() {
+				//alert("1111111");
+				$(".invest_left,.invest_right").toggleClass("active")
+			});
+			//用于移动端左右滑动的时候的效果
+			var toucstart,touchend;
+			$("#invest_project").on("touchstart",function (event) {
+				//阻止浏览器的默认行为
+				event.preventDefault();
+				//获取触摸开始的时候的坐标
+				toucstart = event.changedTouches[0].clientX;
+			})
+			$("#invest_project").on("touchend",function (event) {
+				event.preventDefault();
+				//获取触摸结束的时候的坐标
+				touchend = event.changedTouches[0].clientX;
+				if(Math.abs(touchend - toucstart) > 10){
+					$("#showhide").trigger("click");
+				}
+			})
+			
+			
+			
+		// 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        option = {
+		    title : {
+		        text: '某站点用户访问来源',
+		        subtext: '纯属虚构',
+		        x:'center'
+		    },
+		    tooltip : {
+		        trigger: 'item',
+		        formatter: "{a} <br/>{b} : {c} ({d}%)"
+		    },
+		    legend: {
+		        orient : 'vertical',
+		        x : 'left',
+		        data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+		    },
+		    toolbox: {
+		        show : true,
+		        feature : {
+		            mark : {show: true},
+		            dataView : {show: true, readOnly: false},
+		            magicType : {
+		                show: true, 
+		                type: ['pie', 'funnel'],
+		                option: {
+		                    funnel: {
+		                        x: '25%',
+		                        width: '50%',
+		                        funnelAlign: 'left',
+		                        max: 1548
+		                    }
+		                }
+		            },
+		            restore : {show: true},
+		            saveAsImage : {show: true}
+		        }
+		    },
+		    calculable : true,
+		    series : [
+		        {
+		            name:'访问来源',
+		            type:'pie',
+		            radius : '55%',
+		            center: ['50%', '60%'],
+		            data:[
+		                {value:335, name:'直接访问'},
+		                {value:310, name:'邮件营销'},
+		                {value:234, name:'联盟广告'},
+		                {value:135, name:'视频广告'},
+		                {value:1548, name:'搜索引擎'}
+		            ]
+		        }
+		    ]
+		};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+		</script>
+	</body>
+</html>

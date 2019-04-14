@@ -1,0 +1,83 @@
+/* 头部样式 */
+header nav.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+header .navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+header .navbar-inverse .navbar-nav > li:hover a {
+  color: #00a7ff;
+  text-decoration: underline;
+}
+header .navbar-inverse .navbar-brand {
+  color: #fff;
+  padding: 15px 0px;
+}
+header .navbar-inverse .navbar-brand i {
+  font-size: 24px;
+}
+/* 导航样式 */
+div.bignav .navbar {
+  margin-bottom: 0px;
+}
+div.bignav .navbar .navbar-nav > li > a {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 16px;
+  min-height: 80px;
+  line-height: 80px;
+}
+div.bignav .navbar .navbar-nav > li:hover a {
+  color: #00a7ff;
+  background-color: #e6e3e366;
+}
+div.bignav .navbar .navbar-header {
+  padding-top: 10px;
+}
+div.bignav .navbar .collapse {
+  display: block;
+}
+/* 当前页面样式 */
+.borrow .panel {
+  border-radius: 0px;
+}
+.borrow .panel .panel-heading {
+  border-radius: 0px;
+}
+.borrow .panel .panel-body {
+  background-color: #F9F9F9;
+}
+.borrow .panel .panel-body ul li {
+  color: #555;
+  font-size: 14px;
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 5px;
+  background: url("../../images/sequare.png") left center no-repeat;
+}
+.borrow .panel .panel-body .btn {
+  border-radius: 17px;
+  margin-left: 120px;
+}
+.borrow .panel .panel-body p:nth-child(1) {
+  font-size: 16px;
+}
+.borrow .panel-success,
+.borrow .panel-warning,
+.borrow .panel-info {
+  border: none;
+}
+.borrow .panel-success h3,
+.borrow .panel-warning h3,
+.borrow .panel-info h3 {
+  font-size: 24px;
+  color: #fff;
+}
+/* 底部 */
+footer {
+  padding-top: 20px;
+  margin-top: 40px;
+  background-color: #F8F8F8;
+}
