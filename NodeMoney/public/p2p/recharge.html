@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>账户充值</title>
+    <!-- 引入bootstrap样式-->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <!--引入datetimepicker的样式-->
+    <link rel="stylesheet" type="text/css" href="lib/datetimepicker/css/bootstrap-datetimepicker.css"/>
+    <!-- 引入自己的样式 -->
+    <link rel="stylesheet" href="dist/css/recharge.min.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+              <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                		<span class="glyphicon glyphicon-phone-alt"></span>
+                		<i>028-86261949</i>
+            		</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  	<li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;首页</a></li>
+                  	<li><a href="personal.html"><span class="glyphicon glyphicon-user"></span>&nbsp;sirus</a></li>
+                  	<li><a href="recharge.html">赶快充值</a></li>
+                  	<li>
+                  		<a href="" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-log-out"></span>&nbsp;注销</a>
+                    	<!--模态框-->
+                    	<div class="modal fade bs-example-modal-lg" tabindex="-1" id="mymodal" role="dialog" aria-labelledby="myLargeModalLabel" >
+                            <div class="modal-dialog modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title text-info" >退出系统</h4>
+                                    </div>
+                                    <div class="modal-body" id="mycon">
+                                        <h4>确认退出吗?</h4>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal" id="right">确定</button>
+                                        <button type="button" class="btn btn-primary" id="wrong">取消</button>
+                                    </div>
+                                </div>
+                            </div>
+                    	</div>
+                  	</li>
+                  	<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;帮助</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 导航 -->
+    <div class="bignav">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img alt="Brand" src="images/logo.png">
+                        </a>&emsp;
+                        <span class="delu">账户充值</span>
+                    </div>
+                    
+                </div>
+            </nav>
+    </div>
+
+    <!-- 内容staring -->
+    <!-- 账户充值 -->
+    <div class="container count">
+        <div class="bs-callout bs-callout-info" id="callout-navs-tabs-plugin">
+            <h2>账户充值</h2>
+            <p>1. 由于银行系统的限制，充值功能建议使用 IE 内核（IE8及以上）的浏览器。</p>
+            <p>2. 请注意：为打击信用卡套现行为，充值资金必须经过投资回款后方能允许提现。</p>
+        </div>
+    </div>
+    <!-- 充值方式 -->
+    <div class="container countways">
+        <ul id="myTabs" class="nav nav-tabs" role="tablist">
+            <li role="presentation"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">线上充值(第三方平台)</a></li>
+            <li role="presentation" class="active"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">线下充值</a></li>
+        </ul>
+        <div id="mytabcontent">
+            <div class="table-content" style="display:none">
+                <p class="h3 text-danger text-center" style="margin-top:0px;padding-top:10px;">系统暂不支持，请采用线下充值</p>
+            </div>
+            <div class="table-content" data-example-id="simple-table" >
+                    <div role="tabpanel" class="tab-pane fade in active" id="home"></div>   
+                    <!-- 表格 -->
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>银行名称</th>
+                            <th>开户人姓名</th>
+                            <th>银行账号</th>
+                            <th>开户行支行名称</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <span class="col-bank"></span>
+                            </td>
+                            <td>李老师</td>
+                            <td>6217xxxxxxxxxxxxxx2750</td>
+                            <td>成都支行</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="col-bank"></span>
+                            </td>
+                            <td>李老师</td>
+                            <td>6217xxxxxxxxxxxxxx2750</td>
+                            <td>成都支行</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="col-bank"></span>
+                            </td>
+                            <td>李老师</td>
+                            <td>6217xxxxxxxxxxxxxx2750</td>
+                            <td>成都支行</td>
+                        </tr>
+                        </tbody>
+                    </table> 
+                    <!-- 文字 -->
+                    <div>
+                        <p class="text-primary" style="font-size:20px">第一步:</p>
+                        <p class="text-primary"style="font-size:14px">请选择往以上一个账号汇款或转账您所要充值的金额（若您是跨行转账，推荐选择建行）。注：请保存您的交易记录信息。</p>
+                        <p class="text-primary" style="font-size:20px">第二步:</p>
+                        <p class="text-primary"style="font-size:14px">款或转账成功后，再选择你所汇款或转账的账号，并填写以下完整的信息后，提交您的线下充值申请。我们将会在下个工作日核对您的申请。</p>
+                    </div>
+                    <!-- 表单 -->
+                    <form class="form-horizontal loginform">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">银行</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" style="width: 480px;" name="bankInfo.id">
+                                    <option value="1">工商银行62170038233428412750(府城大道支行)</option>
+                                    <option value="2">农业银行6217003834411112750(成都天府新谷支行)</option>
+                                    <option value="3">招商银行6212303810028412750(成都高新天府大道支行)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">交易号</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" name="tradeCode" style="width: 480px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">充值时间</label>
+                            <div class="col-sm-10">
+                                <input class="form-control datepicker" name="tradeTime" style="width: 480px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">充值金额</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" name="amount" style="width: 480px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">说明</label>
+                            <div class="col-sm-10">
+                                <textarea style="resize: none;" class="form-control" name="note"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="button" class="btn btn-primary" style="width:100px">确认提交</button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <!-- 内容ending -->
+
+    <!-- 尾部 -->
+    <footer class="container-fluid">
+        <div class="container">
+                <div class="row">
+                   <div class="col-md-8 col-xs-12">
+                        <p>专业Java机构</p>
+                        <p> 版权所有： 2006-2016新浪新闻</p>
+                        <p>地  址： 新浪新闻</p>
+                        <p>电  话： 028-xxxxx49  / 400-xxxx-6840  邮箱： yxxx@ixxx.cn</p>
+                        <p>
+                            <a href="#">蜀ICP备14xxxx9号-1</a>
+                            <a href="#">蜀公网安备5xxxxxx541</a>
+                        </p>
+                   </div>
+                   <div class="col-md-2 col-xs-6">
+                       <p>官方微博：</p>
+                        <p><img src="images/tecent.png" alt="" class="img-responsive"></p>
+                        <p><img src="images/sina.png" alt="" class="img-responsive"></p>
+                   </div>  
+                   <div class="col-md-2 col-xs-6">
+                       <p>官方微信：</p>
+                       <p><img src="images/wx.jpg" alt="" class="img-responsive"></p>
+                   </div> 
+                </div>
+        </div>
+    </footer>
+</body>
+<!-- 引入jQuery文件 -->
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<!-- 引入bootstrapjs文件 -->
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="lib/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script src="lib/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<!-- 引入自己的js文件 -->
+<script src="dist/js/index.min.js"></script>
+<script>
+    $(".datepicker").datetimepicker({
+        language: "zh-CN",
+        format: "yyyy-mm-dd hh:ii:ss",
+        autoclose: true,
+        endDate: new Date()
+    });
+    //切换tab栏
+    $("#myTabs li").on("click",function(){
+        $("#mytabcontent .table-content").hide().eq($(this).index()).show();
+    })
+</script>
+</html>

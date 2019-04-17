@@ -1,0 +1,60 @@
+@import url("login.less");
+/* 账户充值 */
+
+.bs-callout {
+    padding: 20px;
+    margin: 5px 0;
+    border: 1px solid #eee;
+    border-left-width: 2px;
+    border-radius: 3px;
+    background-color: #F4F8FA;
+    h2{
+        color: @colorblue1;
+    }
+}
+.bs-callout-info {
+    border-left-color: #0099DD;
+}
+/* 充值方式 */
+.countways{
+    .table-content{
+        border: 1px solid #ddd;
+        border-top: none;
+        padding: 0px 20px;
+        tr{
+            th{
+                font-size: @fs18;
+            }
+            td{
+                font-size: @fs16;
+               
+            }
+        }
+        tbody{
+            tr{
+                .col-bank{
+                    width: 150px;
+                    height: 30px;
+                    line-height: 30px;
+                    display: block;
+                    background: url("@{bgimgUrl}bank_list.png") no-repeat 0px 0px;
+                }
+            }
+            tr:nth-child(1){
+                .col-bank{
+                    background-position: 0 0;
+                }
+            }
+            tr:nth-child(2){
+                .col-bank{
+                    background-position: 0 -37px;
+                }
+            }
+            tr:nth-child(3){
+                .col-bank{
+                    background-position: 0 -110px;
+                }
+            }
+        }
+    }
+}

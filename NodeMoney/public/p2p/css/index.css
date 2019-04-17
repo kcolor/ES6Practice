@@ -1,0 +1,101 @@
+/* 头部样式 */
+/* 头部样式 */
+header nav.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+header .navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+header .navbar-inverse .navbar-nav > li:hover a {
+  color: #00a7ff;
+  text-decoration: underline;
+}
+header .navbar-inverse .navbar-brand {
+  color: #fff;
+  padding: 15px 0px;
+}
+header .navbar-inverse .navbar-brand i {
+  font-size: 24px;
+}
+/* 导航样式 */
+div.bignav .navbar {
+  margin-bottom: 0px;
+}
+div.bignav .navbar .navbar-nav > li > a {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 16px;
+  min-height: 80px;
+  line-height: 80px;
+}
+div.bignav .navbar .navbar-nav > li:hover a {
+  color: #00a7ff;
+  background-color: #e6e3e366;
+  color: #2e8ece;
+}
+div.bignav .navbar .navbar-header {
+  padding-top: 10px;
+}
+div.bignav .navbar .collapse {
+  display: block;
+}
+div.bignav .navbar {
+  margin-bottom: 5px;
+}
+/* 投资理财 */
+.invest .row div {
+  padding-left: 80px;
+  background-repeat: no-repeat;
+  background-position: 0px 18px;
+}
+.invest .row .f1 {
+  background-image: url("../../images/feature01.png");
+}
+.invest .row .f2 {
+  background-image: url("../../images/feature02.png");
+}
+.invest .row .f3 {
+  background-image: url("../../images/feature03.png");
+}
+/* 进行中借款 */
+.borrow .panel,
+.news .panel {
+  border: 0px;
+  margin-top: 40px;
+}
+.borrow .panel-heading,
+.news .panel-heading {
+  height: 42px;
+  padding: 0px 15px 0px 0px;
+  line-height: 40px;
+  background-color: #fff;
+}
+.borrow .panel-heading span:nth-child(1),
+.news .panel-heading span:nth-child(1) {
+  font-size: 24px;
+  color: #2e8ece;
+  font-weight: bold;
+  border-bottom: 2px solid #2e8ece;
+}
+.borrow .panel-body table,
+.news .panel-body table {
+  margin-bottom: 0px;
+}
+/* 新闻资讯 */
+.news table tr:hover {
+  cursor: pointer;
+}
+.news table tr:hover td {
+  color: #00a7ff;
+  background-color: #e6e3e366;
+  color: #2e8ece;
+}
+/* 尾部样式 */
+/* 底部 */
+footer {
+  padding-top: 20px;
+  margin-top: 40px;
+  background-color: #F8F8F8;
+}

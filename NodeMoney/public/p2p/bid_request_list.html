@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="dist/css/bid_request_list.min.css"/>
+	</head>
+	<body>
+			<!--头部的内容(头部的导航条)-->
+		<header>
+			<nav class="navbar navbar-inverse">
+			  <div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+			
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+			        <li><a href="userInfo.html">小强</a></li>
+			        <li><a href="recharge.html">账户充值</a></li>
+			        <li>
+			        	<a href="" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-log-out"></span>&nbsp;注销</a>
+                    	<!--模态框-->
+                    	<div class="modal fade bs-example-modal-lg" tabindex="-1" id="mymodal" role="dialog" aria-labelledby="myLargeModalLabel" >
+                            <div class="modal-dialog modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title text-info" >退出系统</h4>
+                                    </div>
+                                    <div class="modal-body" id="mycon">
+                                        <h4>确认退出吗?</h4>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal" id="right">确定</button>
+                                        <button type="button" class="btn btn-primary" id="wrong">取消</button>
+                                    </div>
+                                </div>
+                            </div>
+                    	</div>
+                    
+			        </li>
+			        <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> 帮助</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</header>
+		<!--头部的内容结束(头部的导航条)-->
+		
+
+		<!--导航条-->
+		<div id="mydiv">
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li  class="active"><a href="index.html">首页</a></li>
+		        <li><a href="invest.html">我要投资</a></li>
+		        <li><a href="borrow.html">我要借款</a></li>
+		        <li><a href="personal.html">个人中心 <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">新手指引</a></li>
+		        <li><a href="#">关于我们</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		</div>
+		<!--导航条结束-->
+		
+		<!--中间的内容开始-->
+		<div class="container" id="invest_project">
+			<div class="row"> 
+				<div class="col-md-3 invest_left">
+					<div class="list-group">
+						<p href="javascript:" class="list-group-item active">投资项目</p>
+						<p href="#" class="list-group-item">借款项目</p>
+						<ul>
+							<li><a href="bid_request_list.html">借款项目</a></li>
+							<li><a href="borrowBidReturn_list.html">还款明细</a></li>
+						</ul>
+						<p href="#" class="list-group-item">我的账户</p>
+						<ul>
+							<li><a href="userInfo.html">账户信息</a></li>
+							<li><a href="realAuth.html">实名认证</a></li>
+							<li><a href="#">银行卡管理</a></li>
+							<li><a href="#">登录记录</a></li>
+						</ul>
+						<p href="#" class="list-group-item">资产详情</p>
+						<ul>
+							<li><a href="accountflow_list.html">账户流水</a></li>
+							<li><a href="recharge_list.html">充值明细</a></li>
+							<li><a href="money_withdraw_list.html">提现记录</a></li>
+							<li><a href="borrowBidReturn_list.html">收款明细</a></li>
+						</ul>
+						<p class="list-group-item"><a href="userInfo.html">个人资料</a></p>
+					</div>
+				</div>
+				<!--账户流水-->
+			  	<div class="col-md-9 invest_right"">
+				<button type="button" class="btn btn-success glyphicon glyphicon-tag showhide" id="showhide"></button>
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">借款项目</h3>
+				  </div>
+				  <div class="panel-body">
+				   <table class="table table-striped">
+				      <thead>
+				        <tr>														
+				          <th>标题</th>
+				          <th>时间</th>
+				          <th>借款金额(元)</th>
+				          <th>期限</th>
+				          <th>利率</th>
+				          <th>状态</th>
+				        </tr>
+				      </thead>
+				      <tbody>
+				        <tr>								 	
+				          <td>江湖救急<small>信</small></td>
+				          <td>2016-01-02</td>
+				          <td>2000</td>
+				          <td>12月</td>
+				          <td>12%</td>
+				          <td>待发布 <span style="color:#3c763d;font-weight:bold;">招标中 满标未审核 还款中<span style="color:#a94442;font-weight:bold;"> 招标拒绝</span></td>
+				        </tr>
+				      </tbody>
+				    </table>
+				  </div>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+	<!--中间的内容结束-->
+		
+		<!--底部的内容-->
+		<footer class="footer container-fluid">
+			<div class="container">
+				<div class="col-md-8">
+					<p>专业Java机构</p>
+					
+					<p>版权所有： 2006-2016新浪新闻</p>
+					
+					<p>地  址： 新浪新闻</p>
+					
+					<p>电  话： 028-xxxxx49  / 400-xxxx-6840  邮箱： yxxx@ixxx.cn</p>
+					
+					<p><a href="#">蜀ICP备14xxxx9号-1</a>  <a href="#">蜀公网安备5xxxxxx541</a></p>
+				</div>
+				<div class="col-md-2">
+					<p>官方微博:</p>
+					<p><img src="images/sina.png" class="img-responsive"/></p>
+					<p><img src="images/tecent.png" class="img-responsive"/></p>
+				</div>
+				<div class="col-md-2">
+					<p>官方微信:</p>
+					<p><img src="images/wx.jpg" class="img-responsive"/></p>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="scripts/personal1.js"></script>
+		<script src="dist/js/index.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#showhide").click(function() {
+				//alert("1111111");
+				$(".invest_left,.invest_right").toggleClass("active")
+			});
+			//用于移动端左右滑动的时候的效果
+			var toucstart,touchend;
+			$("#invest_project").on("touchstart",function (event) {
+				//阻止浏览器的默认行为
+				event.preventDefault();
+				//获取触摸开始的时候的坐标
+				toucstart = event.changedTouches[0].clientX;
+			})
+			$("#invest_project").on("touchend",function (event) {
+				event.preventDefault();
+				//获取触摸结束的时候的坐标
+				touchend = event.changedTouches[0].clientX;
+				if(Math.abs(touchend - toucstart) > 10){
+					$("#showhide").trigger("click");
+				}
+			})
+
+		</script>
+
+	</body>
+</html>

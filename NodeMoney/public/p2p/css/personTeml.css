@@ -1,0 +1,70 @@
+.user .panel-heading .panel-title > a {
+  color: #337ab7;
+}
+.user .panel-body {
+  padding: 0px;
+}
+.user .panel-body p {
+  margin-left: 30px;
+}
+.user .list-group p {
+  margin-left: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+}
+.user .list-group p a {
+  margin-left: 30px;
+}
+.user .list-group p.active {
+  background-color: #337ab7;
+}
+.user .list-group p.active a {
+  color: #fff;
+}
+#showhide {
+  display: none;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+/*个人中心系列响应式菜单*/
+@media screen and (max-width: 768px) {
+  #mainMenu {
+    position: relative;
+    height: 1000px;
+    left: 0px;
+  }
+  #mainMenu .sideLeft {
+    position: absolute;
+    top: 0;
+    left: -116px;
+    transition: all 0.35s linear;
+  }
+  #mainMenu .sideLeft.active {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    transition: all 0.35s linear;
+  }
+  #mainMenu .sideRight.active {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    transition: all 0.35s linear;
+  }
+  #mainMenu .sideRight {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    transition: all 0.35s linear;
+  }
+  #mainMenu .sideRight #showhide {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px ;
+  }
+}
