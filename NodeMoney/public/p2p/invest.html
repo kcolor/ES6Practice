@@ -1,22 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>我的投资</title>
-    <style>
-        .box{
-            padding: 200px 0 0 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="box">
-        <img src="./images/error.png" alt="">
-    </div>
-</body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>p2p平台</title>
+		<!--引入样式-->
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="dist/css/invest.min.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<nav class="navbar navbar-inverse">
+			  <div class="container">
+			  	
+			    <div class="navbar-header">
+			    	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			     	 </button>	
+			      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-phone-alt"> </span><em> 028-86261949</em></a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			     <ul class="nav navbar-nav navbar-right">
+			        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+			        <li><a href="personal.html">小强</a></li>
+			        <li><a href="login.html"><span class="fa fa-sign-in"></span>登录</a></li>
+			        <li><a href="register.html">快速注册</a></li>
+			        <li><a href="recharge.html">赶快充值</a></li>
+			        <li><a href="indexwithoutlogin.html">注销</a></li>
+			        <li><a href="#"><span class="fa fa-question-circle-o"></span>帮助</a></li>
+			        <li><a href="#"  data-toggle="tooltip" data-placement="bottom" title="<img src='images/contract.png' width='100' height='100'/>" data-html="true">联系客服</a></li>
+			     </ul>
+			    </div>
+			  </div>
+			</nav>
+		</header>
+		<!--导航栏-->
+		<nav class="navbar navbar-default mynav">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+	            <li class="active"><a href="invest.html">我要投资</a></li>
+	            <li><a href="borrow.html">我要借款</a></li>
+	            <li><a href="personal.html">个人中心</a></li>
+	            <li><a href="#">新手指引</a></li>
+	            <li><a href="#">关于我们</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		<!--主体start-->
+		<div class="container">
+			<h3>投资列表</h3>
+			<div class="tzlb">
+				<span>标的状态 &emsp;&emsp;&emsp;&emsp;&emsp;</span>
+				<div class="btn-group" role="group">
+				  <button type="button" class="btn btn-default">&emsp;全部&emsp;</button>
+				  <button type="button" class="btn btn-default">&emsp;招标中&emsp;</button>
+				  <button type="button" class="btn btn-default">&emsp;还款中&emsp;</button>
+				</div>
+			<table class="table table-hover">
+		        <thead>
+		        	<tr>
+		            <th>借款人</th>
+		            <th>借款标题</th>
+		            <th class="dis">年利率</th>
+		            <th class="dis">金额</th>
+		            <th class="dis">还款方式</th>
+		            <th>进度</th>
+		            <th>操作</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		          <tr>
+		            <td scope="row">zs</td>
+		            <td>给我2000度过难关</td>
+		            <td class="dis">10.00%</td>
+		            <td class="dis">2,000.00</td>
+		            <td class="dis">按月分期还款</td>
+		            <td>100.00%</td>
+		            <td><a href="borrow_info.html" class="btn btn-danger" role="button">查看</a></td>
+		          </tr>
+		         </tbody>
+		      </table>
+			</div>
+		</div>
+		<!--主体end-->
+		<!--尾部-->
+		<footer class="footer container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-xs-12">
+						<p>专业Java机构</p>
+
+						<p>版权所有： 2006-2016新浪新闻</p>
+						
+						<p>地  址： 新浪新闻</p>
+						
+						<p>电  话： 028-xxxxx49  / 400-xxxx-6840  邮箱： yxxx@ixxx.cn</p>
+						
+						<p class="foot-color">蜀ICP备14xxxx9号-1  蜀公网安备5xxxxxx541</p>
+					</div>
+					<div class="col-md-2 col-xs-6">
+						<p>官方微博</p>
+						<p><img src="images/sina.png" class="img-responsive"/></p>
+						<p><img src="images/tecent.png" class="img-responsive"/></p>
+						
+					</div>
+					<div class="col-md-2 col-xs-6">
+						<p>官方微信</p>
+						<p><img src="images/wx.jpg" class="img-responsive"/></p>
+					</div>	
+				</div>
+			</div>
+		</footer>
+		<!--引入js-->
+		<!-- 引入jQuery文件 -->
+		<script src="lib/jquery/dist/jquery.min.js"></script>
+		<!-- 引入bootstrapjs文件 -->
+		<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function  () {
+				$('[data-toggle="tooltip"]').tooltip()
+			})
+		</script>
+	</body>
 </html>
